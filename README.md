@@ -1,5 +1,7 @@
 # ElasticFeeder
 
+[![Build Status](https://api.travis-ci.org/srsp/elastic-feeder.png)](https://travis-ci.org/srsp/elastic-feeder)
+
 ## What does it do?
 
 ElasticFeeder is a very small library that helps you to get data into ElasticSearch quickly. It is written in Scala, so
