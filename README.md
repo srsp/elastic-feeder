@@ -46,13 +46,13 @@ case class Order(contractNumber: Long, eventDate: Date, clerkId: String, brandId
 As you can see, you can even transform properties from your case class to something you want in your ElasticSearch
 document.
 
-Let's save som __Order__s into ElasticSearch:
+Let's save some Orders into ElasticSearch:
 ```scala
   val orders: List[Order] = getOrders
   feeder.put(orders)
 }
 ```
-That's it. ElasticFeeder will take your list of __Order__s and feed it to ElasticSearch. It uses one or more bulk operations
+That's it. ElasticFeeder will take your list of Orders and feed it to ElasticSearch. It uses one or more bulk operations
 to do that to keep things fast.
 
 # Developers

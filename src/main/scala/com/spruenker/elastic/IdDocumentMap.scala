@@ -14,5 +14,5 @@ trait IdDocumentMap extends DocumentMap {
    * @return id
    */
   def _id: String
-  
+
 }
