@@ -4,8 +4,8 @@
 
 ## What does it do?
 
-ElasticFeeder is a very small library that helps you to get data into ElasticSearch quickly. It is written in Scala, so
-it should be usable by every language on the JVM.
+ElasticFeeder is a very small library that helps you to get data into ElasticSearch quickly. It is written in Scala, but
+it may work for Java, too.
 
 ## How does it work?
 
