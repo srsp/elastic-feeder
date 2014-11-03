@@ -21,7 +21,8 @@ val feeder = new ElasticFeeder("example.org", 9123, "my-index")
 Now you have to give the feeder some data. You can feed it with Sequences (e.g. List) of objects, that implement the
 __IdDocumentMap__ trait, which is really simple. It needs implementations of two methods:
 ```scala
-trait IdDocumentMap extends DocumentMap {
+/** Simplified. **/
+trait IdDocumentMap {
   def _id: String
   def map: Map[String, Any]
 }
@@ -50,9 +51,8 @@ document.
 
 Let's save some Orders into ElasticSearch:
 ```scala
-  val orders: List[Order] = getOrders
-  feeder.put(orders)
-}
+val orders: List[Order] = getOrders
+feeder.put(orders)
 ```
 That's it. ElasticFeeder will take your list of Orders and feed it to ElasticSearch. It uses one or more bulk operations
 to do that to keep things fast.
