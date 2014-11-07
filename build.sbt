@@ -2,7 +2,7 @@ name := "elastic-feeder"
 
 organization := "com.spruenker"
 
-version := "1.1-SNAPSHOT"
+version := "1.1"
 
 val currentScala = "2.11.4"
 
