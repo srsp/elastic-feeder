@@ -9,6 +9,11 @@ it may work for Java, too.
 
 ## How does it work?
 
+Add ElasticFeeder to your build.sbt:
+```scala
+libraryDependencies += "com.spruenker" %% "elastic-feeder" % "1.1.0"
+```
+
 Create a new elastic-feeder object:
 ```scala
 val feeder = new ElasticFeeder(_index = "my-index")

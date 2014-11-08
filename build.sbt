@@ -2,7 +2,7 @@ name := "elastic-feeder"
 
 organization := "com.spruenker"
 
-version := "1.1.0"
+version := "1.1.1-SNAPSHOT"
 
 val currentScala = "2.11.4"
 
@@ -11,7 +11,7 @@ scalaVersion := currentScala
 
 // Dependencies
 
-libraryDependencies += "com.sksamuel.elastic4s" %% "elastic4s" % "1.3.2"
+libraryDependencies += "com.sksamuel.elastic4s" %% "elastic4s" % "1.4.0"
 
 // Test dependencies
 
@@ -21,7 +21,7 @@ libraryDependencies += "org.mockito" % "mockito-core" % "1.10.8" % "test"
 
 
 // Publishing
-
+// Publish with 'sbt +publish-signed'
 crossScalaVersions := Seq("2.10.4", currentScala)
 
 publishMavenStyle := true
